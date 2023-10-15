@@ -15,7 +15,15 @@ pub mod hello_anchor_hack {
         msg!("we're all in our private traps");
         Ok(())
     }
+
+    pub fn initialize2(_ctx: Context<Initialize>) -> Result<()> {
+        msg!("we're all have a choice");
+        Ok(())
+    }
 }
 
 #[derive(Accounts)]
 pub struct Initialize {}
+
+#[derive(Accounts)]
+pub struct Initialize2 {}

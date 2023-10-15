@@ -13,6 +13,12 @@ describe("hello-anchor-hack", () => {
     const tx = await program.methods.initialize().rpc();
     console.log("Your transaction signature", tx);
   });
+
+  it("Is initialized2!", async () => {
+    // Add your test here.
+    const tx = await program.methods.initialize2().rpc();
+    console.log("Your transaction signature", tx);
+  });
 });
 
 // import * as anchor from "@coral-xyz/anchor";
